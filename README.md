@@ -15,12 +15,12 @@ OP
 * mix node.js Buffers and Typed Arrays --> OK, see https://github.com/Ayms/node-typedarray
 * URL parser --> OK
 * HTTP parser --> OK
-* self signed certificates generation (OP) --> NOK
-* certificates verification (OP) --> NOK
-* implement TLS protocol (OP, inside websockets, both client and server side) --> NOK
+* self signed certificates generation (OP) --> TBD based on forge + cryptoJS
+* certificates verification (OP) --> TBD based on forge + cryptoJS
+* implement TLS protocol (OP, inside websockets, both client and server side) --> TBD based on forge + cryptoJS
 * retrieve the certificate used for the first TLS connection between the page and the OP (Evil1 attack) --> NOK (W3C request)
 * implement Tor protocol and Tor protocol websocket extension (OP, inside websockets) --> OK
-* Webcrypto like features (hash, encrypt, decrypt, rsa, aes, etc), including Tor specific ones (RSA_PKCS1_OAEP_PADDING, aes-128-ctr) --> NOK
+* Webcrypto like features (hash, encrypt, decrypt, rsa, aes, etc), including Tor specific ones (RSA_PKCS1_OAEP_PADDING, aes-128-ctr) --> TBD based on cryptoJS
 
 OR
 * websocket protocol (server side) --> OK
