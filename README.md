@@ -15,16 +15,32 @@ OP
 * mix node.js Buffers and Typed Arrays --> OK, see https://github.com/Ayms/node-typedarray
 * URL parser --> OK
 * HTTP parser --> OK
-* self signed certificates generation (OP) --> TBD inspired from forge + cryptoJS (modified Webcrypto like)
-* certificates verification (OP) --> TBD inspired from forge + cryptoJS (modified Webcrypto like)
-* implement TLS protocol (OP, inside websockets, both client and server side) --> TBD inspired from forge + cryptoJS (modified Webcrypto like)
-* retrieve the certificate used for the first TLS connection between the page and the OP (Evil1 attack) --> NOK (W3C request Webcrypto API Group)
+* self signed certificates generation (OP) --> TBD
+* certificates verification (OP) --> TBD
+* implement TLS protocol (OP, inside websockets, both client and server side) --> TBD
+* retrieve the certificate used for the first TLS connection between the page and the OP (Evil1 attack) --> NOK (W3C request Webcrypto API Group http://www.w3.org/2012/webcrypto/)
 * implement Tor protocol and Tor protocol websocket extension (OP, inside websockets) --> OK
-* Webcrypto like features http://www.w3.org/TR/WebCryptoAPI/ (hash, encrypt, decrypt, rsa, aes, etc), including Tor specific ones (RSA_PKCS1_OAEP_PADDING, aes-128-ctr) --> TBD inspired from cryptoJS (modified Webcrypto like)
+* Webcrypto like features http://www.w3.org/TR/WebCryptoAPI/ (hash, encrypt, decrypt, rsa, aes, etc), including Tor specific ones (RSA_PKCS1_OAEP_PADDING, aes-128-ctr) --> TBD
 
 OR
 * websocket protocol (server side) --> OK
 * websocket Tor protocol extension --> OK
+
+To be considered (TBD resolution, inspired or build-in) :
+
+* [The W3C Webcrypto Working Group] (http://www.w3.org/2012/webcrypto/)
+* [The IETF JOSE (Javascript Object Signing and Encryption) Working Group] (http://tools.ietf.org/wg/jose/charters)
+* [The IETF RTCWeb Working Group] (http://tools.ietf.org/wg/rtcweb/)
+* [The W3C WebRTC Working Group] (http://www.w3.org/2011/04/webrtc/)
+* [The W3C Web Applications Security Working Group] (http://www.w3.org/2011/webappsec/)
+* [The W3C WebApps Working Group] (http://www.w3.org/2008/webapps/)
+* [DomCrypt in Mozilla and Chrome] (https://wiki.mozilla.org/Privacy/Features/DOMCryptAPISpec/Latest)
+* [Microsoft Cryptographic API] (http://msdn.microsoft.com/en-us/library/aa380256.aspx)
+* [Microsoft Next-Generation Cryptographic API] (http://msdn.microsoft.com/en-us/library/windows/desktop/aa376210%28v=vs.85%29.aspx)
+* [The Stanford Javascript Crypto library] (http://crypto.stanford.edu/sjcl/)
+* [Forge] (https://github.com/digitalbazaar/forge)
+* [cryptoJS] (http://code.google.com/p/crypto-js/)
+
 	
 ## Tests :
 
