@@ -27,11 +27,9 @@ OR
 * websocket protocol (server side) --> OK
 * websocket Tor protocol extension --> OK
 
-Related or to be considered (for TBD resolution, inspired or built-in, the requirement being that everything must work into all browsers and follow the existing and future standards) :
+Related or to be considered (for TBD resolution, inspired or built-in, the requirement being that everything must work into all browsers (fix and mobile) and follow the existing and future standards) :
 
 * [The W3C Webcrypto Working Group] (http://www.w3.org/2012/webcrypto/)
-* [The IETF JOSE (Javascript Object Signing and Encryption) Working Group] (http://tools.ietf.org/wg/jose/charters)
-* [The IETF RTCWeb Working Group] (http://tools.ietf.org/wg/rtcweb/)
 * [The W3C WebRTC Working Group] (http://www.w3.org/2011/04/webrtc/)
 * [The W3C Web Applications Security Working Group] (http://www.w3.org/2011/webappsec/)
 * [The W3C WebApps Working Group] (http://www.w3.org/2008/webapps/)
