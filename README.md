@@ -12,21 +12,22 @@ Extended browserification of https://github.com/Ayms/node-Tor, using Tor or a To
 ## Browser's required modules and status :
 
 OP
-* mix node.js Buffers and Typed Arrays --> OK, see https://github.com/Ayms/node-typedarray
+* mix node.js's Buffers and Typed Arrays --> OK, see https://github.com/Ayms/node-typedarray
 * URL parser --> OK
 * HTTP parser --> OK
+* Secure script to control the page --> OK
 * self signed certificates generation (OP) --> TBD
 * certificates verification (OP) --> TBD
 * implement TLS protocol (OP, inside websockets, both client and server side) --> TBD
 * retrieve the certificate used for the first TLS connection between the page and the OP (Evil1 attack) --> NOK (W3C request Webcrypto API Group http://www.w3.org/2012/webcrypto/)
-* implement Tor protocol and Tor protocol websocket extension (OP, inside websockets) --> OK
+* implement Tor protocol and websocket Tor protocol extension (OP, inside websockets) --> OK
 * Webcrypto like features http://www.w3.org/TR/WebCryptoAPI/ (hash, encrypt, decrypt, rsa, aes, etc), including Tor specific ones (RSA_PKCS1_OAEP_PADDING, aes-128-ctr) --> TBD
 
 OR
 * websocket protocol (server side) --> OK
 * websocket Tor protocol extension --> OK
 
-To be considered (TBD resolution, inspired or build-in) :
+Related or to be considered (for TBD resolution, inspired or build-in, the requirement being that everything must work on all browsers and follow the existing (non absurd) standards and future ones) :
 
 * [The W3C Webcrypto Working Group] (http://www.w3.org/2012/webcrypto/)
 * [The IETF JOSE (Javascript Object Signing and Encryption) Working Group] (http://tools.ietf.org/wg/jose/charters)
@@ -41,7 +42,6 @@ To be considered (TBD resolution, inspired or build-in) :
 * [Forge] (https://github.com/digitalbazaar/forge)
 * [cryptoJS] (http://code.google.com/p/crypto-js/)
 
-	
 ## Tests :
 
 See https://github.com/Ayms/node-Tor/blob/master/test/log-anonym.txt
