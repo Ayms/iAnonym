@@ -27,7 +27,7 @@ OR
 * websocket protocol (server side) --> OK
 * websocket Tor protocol extension --> OK
 
-Related or to be considered (for TBD resolution, inspired or build-in, the requirement being that everything must work on all browsers and follow the existing (non absurd) standards and future ones) :
+Related or to be considered (for TBD resolution, inspired or built-in, the requirement being that everything must work into all browsers and follow the existing and future standards) :
 
 * [The W3C Webcrypto Working Group] (http://www.w3.org/2012/webcrypto/)
 * [The IETF JOSE (Javascript Object Signing and Encryption) Working Group] (http://tools.ietf.org/wg/jose/charters)
@@ -48,8 +48,8 @@ See https://github.com/Ayms/node-Tor/blob/master/test/log-anonym.txt
 	
 ## Related projects :
 
-[Ayms/node-Tor](https://github.com/Ayms/node-Tor)
-[Ayms/node-typedarray](https://github.com/Ayms/node-typedarray)
-[Ayms/node-dom](https://github.com/Ayms/node-dom)
-[Ayms/node-bot](https://github.com/Ayms/node-bot)
-[Ayms/node-gadgets](https://github.com/Ayms/node-gadgets)
+* [Ayms/node-Tor](https://github.com/Ayms/node-Tor)
+* [Ayms/node-typedarray](https://github.com/Ayms/node-typedarray)
+* [Ayms/node-dom](https://github.com/Ayms/node-dom)
+* [Ayms/node-bot](https://github.com/Ayms/node-bot)
+* [Ayms/node-gadgets](https://github.com/Ayms/node-gadgets)
