@@ -33,6 +33,7 @@ Related and to be considered (for TBD resolution, inspired or built-in, the requ
 * [DomCrypt (Webcrypto compatible) in Mozilla] (https://addons.mozilla.org/en-US/firefox/addon/domcrypt/) [and WebKit(Chrome/Safari/others)] (https://bugs.webkit.org/show_bug.cgi?id=62010) [and IE (?)] (http://slashdot.org/comments.pl?sid=3126489&cid=41375473)
 * [ArrayBuffer / Typed Arrays] (http://www.khronos.org/registry/typedarray/specs/latest/) [and implementation status] (https://developer.mozilla.org/en-US/docs/JavaScript_typed_arrays/ArrayBuffer#Browser_compatibility)
 * [TextEncoder / TextDecoder](http://encoding.spec.whatwg.org/#api ) [and implementation] (http://code.google.com/p/stringencoding/)
+* TC39 ECMAScript and SES concepts + [observe] (http://wiki.ecmascript.org/doku.php?id=harmony:observe)
 * [The W3C Web Applications Security Working Group] (http://www.w3.org/2011/webappsec/) [and Content Security policy] (http://www.w3.org/TR/CSP/)
 * [Forge (TLS implementation)] (https://github.com/digitalbazaar/forge)
 * [The Stanford Javascript Crypto library] (http://crypto.stanford.edu/sjcl/)
@@ -42,8 +43,6 @@ Related and to be considered (for TBD resolution, inspired or built-in, the requ
 Secondary interest :
 
 * [The W3C WebRTC Working Group] (http://www.w3.org/2011/04/webrtc/)
-* [Microsoft Cryptographic API] (http://msdn.microsoft.com/en-us/library/aa380256.aspx)
-* [Microsoft Next-Generation Cryptographic API] (http://msdn.microsoft.com/en-us/library/windows/desktop/aa376210%28v=vs.85%29.aspx)
 
 ## Tests :
 
