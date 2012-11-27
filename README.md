@@ -19,7 +19,7 @@ OP
 * self signed certificates generation (OP) --> TBD
 * certificates verification (OP) --> TBD
 * implement TLS protocol (OP, inside websockets, both client and server side) --> TBD
-* retrieve the certificate used for the first TLS connection between the page and the OP (Evil1 attack) --> NOK (W3C request Webcrypto API Group http://www.w3.org/2012/webcrypto/)
+* retrieve the certificate used for the first TLS connection between the page and the OP (Evil1 attack) --> this is being considered by the W3C Webcrypto Working Group [Use Cases - Miscellaneous / Exposing the server certificate] (http://www.w3.org/2012/webcrypto/wiki/Use_Cases#Miscellaneous) 
 * implement Tor protocol and websocket Tor protocol extension (OP, inside websockets) --> OK
 * Webcrypto like features http://www.w3.org/TR/WebCryptoAPI/ (hash, encrypt, decrypt, rsa, aes, dh, etc), including Tor specific ones (RSA_PKCS1_OAEP_PADDING, aes-128-ctr) --> TBD
 
