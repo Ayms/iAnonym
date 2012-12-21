@@ -51,6 +51,7 @@ See https://github.com/Ayms/node-Tor/blob/master/test/log-anonym.txt
 ## Related projects :
 
 * [Ayms/node-Tor](https://github.com/Ayms/node-Tor)
+* [Ayms/websocket](https://github.com/Ayms/websocket)
 * [Ayms/node-typedarray](https://github.com/Ayms/node-typedarray)
 * [Ayms/node-dom](https://github.com/Ayms/node-dom)
 * [Ayms/node-bot](https://github.com/Ayms/node-bot)
