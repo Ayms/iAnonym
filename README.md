@@ -37,6 +37,7 @@ Related and to be considered (for TBD resolution, inspired or built-in, the requ
 * [Forge (TLS implementation)] (https://github.com/digitalbazaar/forge)
 * [The Stanford Javascript Crypto library] (http://crypto.stanford.edu/sjcl/)
 * [cryptoJS] (http://code.google.com/p/crypto-js/)
+* [PolyCrypt] (http://github.com/polycrypt/polycrypt/)
 * [The W3C WebApps Working Group] (http://www.w3.org/2008/webapps/wiki/PubStatus#API_Specifications)
 
 Secondary interest :
