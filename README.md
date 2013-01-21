@@ -45,10 +45,27 @@ Secondary interest :
 * [The W3C Web Applications Security Working Group] (http://www.w3.org/2011/webappsec/) [and Content Security policy] (http://www.w3.org/TR/CSP/)
 * [The W3C WebRTC Working Group] (http://www.w3.org/2011/04/webrtc/)
 
-## Tests :
+## Status and Tests :
 
 See https://github.com/Ayms/node-Tor/blob/master/test/log-anonym.txt
-	
+
+You can try it live (soon) :
+* set the socks proxy V5 interface of your browser to IP 213.246.53.127 port xxx (to come) (on Firefox : Options/Advanced/Network/Parameters/Manual configuration of proxy), clear the cache/history, close your browser and reopen it
+* enter url http://www.a1b1c1d1.com (fake domain)
+* this will load the press public site www.lepoint.fr (an "usual" huge public site that does include whatever messy stuff the web has invented, therefore a good test site), you can use the web console (or network analyzer) to check that all requests from the browser are toward www.a1b1c1d1.com domain, the local resources urls (www.a1b1c1d1.com/logo.png) are not encrypted (but can not be seen when TLS will be implemented), the outside resources urls are encrypted and look like www.a1b1c1d1.com/ac496a69dbc0abf30b8a2dd7c0105509589a636c391e1e5d04d9e9170644ef2e573b55dcd701acc85
+* some requests can still appear to be on the domain www.lepoint.fr, this is because for now urls contained in css files are not filtered.
+
+The test configuration is :
+
+	[Browser] 		| <--socks--------------------------> |
+					|									  |	[node-Tor_OR] <-----> [Tor Network] <-----> [Site]
+	[node-Tor_OP]	| <--websocket RELAY_WS/ASSOCIATE---> |
+					|	 RELAY_BEGIN/CONN/DATA			  |
+
+See [Ayms/node-Tor](https://github.com/Ayms/node-Tor) for RELAY_WS/ASSOCIATE
+
+node_Tor_OP is still on a server (node.js javascript) but using what is available inside browsers, "only" crypto and TLS remain to be implemented in javascript to put it entirely inside the browser.
+
 ## Related projects :
 
 * [Ayms/node-Tor](https://github.com/Ayms/node-Tor)
