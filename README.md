@@ -33,7 +33,7 @@ Related and to be considered (for TBD resolution, inspired or built-in, the requ
 * [DomCrypt (Webcrypto compatible) in Mozilla] (https://addons.mozilla.org/en-US/firefox/addon/domcrypt/) [and WebKit(Chrome/Safari/others)] (https://bugs.webkit.org/show_bug.cgi?id=62010) [and IE (?)] (http://slashdot.org/comments.pl?sid=3126489&cid=41375473)
 * [ArrayBuffer / Typed Arrays] (http://www.khronos.org/registry/typedarray/specs/latest/) [and implementation status] (https://developer.mozilla.org/en-US/docs/JavaScript_typed_arrays/ArrayBuffer#Browser_compatibility)
 * [TextEncoder / TextDecoder](http://encoding.spec.whatwg.org/#api ) [and implementation] (http://code.google.com/p/stringencoding/)
-* TC39 ECMAScript and SES concepts + [observe] (http://wiki.ecmascript.org/doku.php?id=harmony:observe)
+* TC39 ECMAScript and SES concepts + [Object.observe] (http://wiki.ecmascript.org/doku.php?id=harmony:observe)
 * [Forge (TLS implementation)] (https://github.com/digitalbazaar/forge)
 * [The Stanford Javascript Crypto library] (http://crypto.stanford.edu/sjcl/)
 * [cryptoJS] (http://code.google.com/p/crypto-js/)
@@ -49,10 +49,13 @@ Secondary interest :
 
 See https://github.com/Ayms/node-Tor/blob/master/test/log-anonym.txt
 
-You can try it live (soon) :
+You can try it Live (soon) :
 * set the socks proxy V5 interface of your browser to IP 213.246.53.127 port xxx (to come) (on Firefox : Options/Advanced/Network/Parameters/Manual configuration of proxy), clear the cache/history, close your browser and reopen it
-* enter url http://www.a1b1c1d1.com (fake domain)
-* this will load the press public site www.lepoint.fr (an "usual" huge public site that does include whatever messy stuff the web has invented, therefore a good test site), you can use the web console (or network analyzer) to check that all requests from the browser are toward www.a1b1c1d1.com domain, the local resources urls (www.a1b1c1d1.com/logo.png) are not encrypted (but can not be seen when TLS will be implemented), the outside resources urls are encrypted and look like www.a1b1c1d1.com/ac496a69dbc0abf30b8a2dd7c0105509589a636c391e1e5d04d9e9170644ef2e573b55dcd701acc85
+* enter url http://www.f4116a30c08bbdfd01813b96c909.com (fake domain)
+* this will load the press public site www.lepoint.fr (an "usual" huge public site that does include whatever messy stuff the web has invented, therefore a good test site), you can use the web console (or network analyzer) to check that all requests from the browser are toward www.f4116a30c08bbdfd01813b96c909.com domain, the local resources urls (www.f4116a30c08bbdfd01813b96c909.com/logo.png) are not encrypted (but can not be seen when TLS will be implemented), the outside resources urls are encrypted and look like www.f4116a30c08bbdfd01813b96c909.com/ac496a69dbc0abf30b8a2dd7c0105509589a636c391e1e5d04d9e9170644ef2e573b55dcd701acc85
+
+See http://www.ianonym.com Details section for url encoding.
+
 * some requests can still appear to be on the domain www.lepoint.fr, this is because for now urls contained in css files are not filtered.
 
 The test configuration is :
