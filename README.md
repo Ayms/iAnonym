@@ -16,18 +16,18 @@ OP
 * URL parser --> OK
 * HTTP parser --> OK
 * Secure script to control the page --> OK
-* self signed certificates generation (OP) --> TBD
-* certificates verification (OP) --> TBD
-* implement TLS protocol (OP, inside websockets, both client and server side) --> TBD
+* self signed certificates generation (OP) --> OK
+* certificates verification (OP) --> Webcrypto secondary features
+* implement TLS protocol (OP, inside websockets, both client and server side) --> Forge or Webcrypto secondary features
 * retrieve the certificate used for the first TLS connection between the page and the OP (Evil1 attack) --> this is being considered by the W3C Webcrypto Working Group [Use Cases - Miscellaneous / Exposing the server certificate] (http://www.w3.org/2012/webcrypto/wiki/Use_Cases#Miscellaneous) 
 * implement Tor protocol and websocket Tor protocol extension (OP, inside websockets) --> OK
-* Webcrypto like features http://www.w3.org/TR/WebCryptoAPI/ (hash, encrypt, decrypt, rsa, aes, dh, etc), including Tor specific ones (RSA_PKCS1_OAEP_PADDING, aes-128-ctr) --> TBD
+* Webcrypto like features http://www.w3.org/TR/WebCryptoAPI/ (hash, encrypt, decrypt, rsa, aes, dh, etc) --> OK, cryptoJS, jsbn and polycrypt (conversion fonctions) + RELAY_INFO
 
 OR
-* websocket protocol (server side) --> OK
-* websocket Tor protocol extension --> OK
+* websocket protocol --> OK, see https://github.com/Ayms/websocket
+* websocket Tor protocol extension --> OK (RELAY_WS, RELAY_ASSOCIATE, RELAY_INFO, CREATE_FAST_WS, CREATED_FAST_WS - see see https://github.com/Ayms/node-Tor)
 
-Related and to be considered (for TBD resolution, inspired or built-in, the requirement being that everything must work into all browsers (fix and mobile) and follow the existing and future standards) :
+Related :
 
 * [The W3C Webcrypto Working Group] (http://www.w3.org/2012/webcrypto/) [and status] (http://it.slashdot.org/story/12/09/18/1526236/w3c-releases-first-working-draft-of-web-crypto-api)
 * [DomCrypt (Webcrypto compatible) in Mozilla] (https://addons.mozilla.org/en-US/firefox/addon/domcrypt/) [and WebKit(Chrome/Safari/others)] (https://bugs.webkit.org/show_bug.cgi?id=62010) [and IE (?)] (http://slashdot.org/comments.pl?sid=3126489&cid=41375473)
@@ -37,6 +37,7 @@ Related and to be considered (for TBD resolution, inspired or built-in, the requ
 * [Forge (TLS implementation)] (https://github.com/digitalbazaar/forge)
 * [The Stanford Javascript Crypto library] (http://crypto.stanford.edu/sjcl/)
 * [cryptoJS] (http://code.google.com/p/crypto-js/)
+* [jsbn] (http://www-cs-students.stanford.edu/~tjw/jsbn/)
 * [PolyCrypt] (http://github.com/polycrypt/polycrypt/)
 * [The W3C WebApps Working Group] (http://www.w3.org/2008/webapps/wiki/PubStatus#API_Specifications)
 
