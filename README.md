@@ -9,6 +9,10 @@ See http://www.ianonym.com
 
 Extended browserification of https://github.com/Ayms/node-Tor, using Tor or a Tor like network, one unique javascript code for all platforms.
 
+9th February 2012 : first successfull complete communication from the browser with the OP js inside the browser, see the results [First loading - in black the OR,in white the OP inside the browser with web console messages] (http://www.ianonym.com/img/first_browser_page3.jpg) 
+
+It's already quite fast while no optimization efforts have been made.
+
 ## Browser's required modules and status :
 
 OP
@@ -47,6 +51,8 @@ Secondary interest :
 * [The W3C WebRTC Working Group] (http://www.w3.org/2011/04/webrtc/)
 
 ## Status and Tests :
+
+####This section is deprecated since now everything is working from the browser, we keep it for historical reasons.
 
 See https://github.com/Ayms/node-Tor/blob/master/test/log-anonym.txt
 
