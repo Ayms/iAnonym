@@ -9,7 +9,7 @@ See http://www.ianonym.com
 
 Extended browserification of https://github.com/Ayms/node-Tor, using Tor or a Tor like network, one unique javascript code for all platforms.
 
-9th February 2012 : first successfull complete communication from the browser with the OP js inside the browser, see the results [First loading - in black the OR,in white the OP inside the browser with web console messages] (http://www.ianonym.com/img/first_browser_page3.jpg) 
+9th February 2013 : first successfull complete communication from the browser with the OP js inside the browser, see the results [First loading - in black the OR,in white the OP inside the browser with web console messages] (http://www.ianonym.com/img/first_browser_page3.jpg) 
 
 It's already quite fast while no optimization efforts have been made.
 
