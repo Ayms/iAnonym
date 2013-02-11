@@ -11,7 +11,7 @@ Extended browserification of https://github.com/Ayms/node-Tor, using Tor or a To
 
 9th February 2013 : first successfull complete communication from the browser with the OP js inside the browser, see the results [First loading - in black the OR,in white the OP inside the browser with web console messages] (http://www.ianonym.com/img/first_browser_page3.jpg) 
 
-It's already quite fast while no optimization efforts have been made.
+It's already fast while no optimization efforts have been made.
 
 ## Browser's required modules and status :
 
@@ -34,7 +34,7 @@ OR
 Related :
 
 * [The W3C Webcrypto Working Group] (http://www.w3.org/2012/webcrypto/) [and status] (http://it.slashdot.org/story/12/09/18/1526236/w3c-releases-first-working-draft-of-web-crypto-api)
-* [DomCrypt (Webcrypto compatible) in Mozilla] (https://addons.mozilla.org/en-US/firefox/addon/domcrypt/) [and WebKit(Chrome/Safari/others)] (https://bugs.webkit.org/show_bug.cgi?id=62010) [and IE (?)] (http://slashdot.org/comments.pl?sid=3126489&cid=41375473)
+* [DomCrypt (Webcrypto compatible) in Mozilla] (https://addons.mozilla.org/en-US/firefox/addon/domcrypt/)
 * [ArrayBuffer / Typed Arrays] (http://www.khronos.org/registry/typedarray/specs/latest/) [and implementation status] (https://developer.mozilla.org/en-US/docs/JavaScript_typed_arrays/ArrayBuffer#Browser_compatibility)
 * [TextEncoder / TextDecoder](http://encoding.spec.whatwg.org/#api ) [and implementation] (http://code.google.com/p/stringencoding/)
 * TC39 ECMAScript and SES concepts + [Object.observe] (http://wiki.ecmascript.org/doku.php?id=harmony:observe)
@@ -52,7 +52,7 @@ Secondary interest :
 
 ## Status and Tests :
 
-####This section is deprecated since now everything is working from the browser, we keep it for historical reasons.
+####This section is deprecated since now everything is working inside the browser, we keep it for historical reasons.
 
 See https://github.com/Ayms/node-Tor/blob/master/test/log-anonym.txt
 
@@ -73,8 +73,6 @@ The test configuration is :
 					|	 RELAY_BEGIN/CONN/DATA			  |
 
 See [Ayms/node-Tor](https://github.com/Ayms/node-Tor) for RELAY_WS/ASSOCIATE
-
-node_Tor_OP is still on a server (node.js javascript) but using what is available inside browsers, "only" crypto and TLS remain to be implemented in javascript to put it entirely inside the browser.
 
 ## Related projects :
 
