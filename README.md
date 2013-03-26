@@ -21,9 +21,9 @@ OP
 * HTTP parser --> OK
 * Secure script to control the page --> OK
 * self signed certificates generation (OP) --> OK
-* certificates verification (OP) --> Webcrypto secondary features
-* implement TLS protocol (OP, inside websockets, both client and server side) --> Forge or Webcrypto secondary features
-* retrieve the certificate used for the first TLS connection between the page and the OP (Evil1 attack) --> this is being considered by the W3C Webcrypto Working Group [Use Cases - Miscellaneous / Exposing the server certificate] (http://www.w3.org/2012/webcrypto/wiki/Use_Cases#Miscellaneous) 
+* certificates verification (OP) --> OK
+* implement TLS protocol (OP, inside websockets, both client and server side) --> OK, see [Ayms/abstract-tls](https://github.com/Ayms/abstract-tls)
+* retrieve the certificate used for the first TLS connection between the page and the OP (Evil1 attack) --> OK, see [Interception Detector](http://www.ianonym.com/intercept.html)
 * implement Tor protocol and websocket Tor protocol extension (OP, inside websockets) --> OK
 * Webcrypto like features http://www.w3.org/TR/WebCryptoAPI/ (hash, encrypt, decrypt, rsa, aes, dh, etc) --> OK, cryptoJS, jsbn and polycrypt (conversion fonctions) + RELAY_INFO
 
@@ -77,6 +77,8 @@ See [Ayms/node-Tor](https://github.com/Ayms/node-Tor) for RELAY_WS/ASSOCIATE
 ## Related projects :
 
 * [Ayms/node-Tor](https://github.com/Ayms/node-Tor)
+* [Interception Detector](http://www.ianonym.com/intercept.html)
+* [Ayms/abstract-tls](https://github.com/Ayms/abstract-tls)
 * [Ayms/websocket](https://github.com/Ayms/websocket)
 * [Ayms/node-typedarray](https://github.com/Ayms/node-typedarray)
 * [Ayms/node-dom](https://github.com/Ayms/node-dom)
