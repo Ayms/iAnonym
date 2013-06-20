@@ -63,7 +63,7 @@ See https://github.com/Ayms/node-Tor/blob/master/test/log-anonym.txt
 You can try it Live (soon) :
 * set the socks proxy V5 interface of your browser to IP 213.246.53.127 port xxx (to come) (on Firefox : Options/Advanced/Network/Parameters/Manual configuration of proxy), clear the cache/history, close your browser and reopen it
 * enter url http://www.f4116a30c08bbdfd01813b96c909.com (fake domain)
-* this will load the press public site www.lepoint.fr (an "usual" huge public site that does include whatever messy stuff the web has invented, therefore a good test site), you can use the web console (or network analyzer) to check that all requests from the browser are toward www.f4116a30c08bbdfd01813b96c909.com domain, the local resources urls (www.f4116a30c08bbdfd01813b96c909.com/logo.png) are not encrypted (but can not be seen when TLS will be implemented), the outside resources urls are encrypted and look like www.f4116a30c08bbdfd01813b96c909.com/ac496a69dbc0abf30b8a2dd7c0105509589a636c391e1e5d04d9e9170644ef2e573b55dcd701acc85
+* this will load the press public site www.lepoint.fr (a huge public site, therefore a good test site), you can use the web console (or network analyzer) to check that all requests from the browser are toward www.f4116a30c08bbdfd01813b96c909.com domain, the local resources urls (www.f4116a30c08bbdfd01813b96c909.com/logo.png) are not encrypted (but can not be seen when TLS will be implemented), the outside resources urls are encrypted and look like www.f4116a30c08bbdfd01813b96c909.com/ac496a69dbc0abf30b8a2dd7c0105509589a636c391e1e5d04d9e9170644ef2e573b55dcd701acc85
 
 See http://www.ianonym.com Details section for url encoding.
 
