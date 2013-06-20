@@ -3,6 +3,10 @@ iAnonym
 
 Anonymity into your browser everywhere from any device
 
+## Crowdfunding campaign launched on Kickstarter the 19th of June for 40 days, you're welcome to contribute
+
+[iAnonym kickstarter campaign] (http://www.kickstarter.com/projects/450023/ianonym-internet-privacy-everywhere-from-any-devic)
+
 ## Presentation :
 
 See http://www.ianonym.com
