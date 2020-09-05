@@ -9,11 +9,11 @@ Anonymity into your browser everywhere from any device
 
 ## Presentation :
 
-See http://www.ianonym.com
+See http://ianonym.peersm.com
 
 Extended browserification of https://github.com/Ayms/node-Tor, using Tor or a Tor like network, one unique javascript code for all platforms.
 
-9th February 2013 : first successfull complete communication from the browser with the OP js inside the browser, see the results [First loading - in black the OR,in white the OP inside the browser with web console messages] (http://www.ianonym.com/img/first_browser_page3.jpg) 
+9th February 2013 : first successfull complete communication from the browser with the OP js inside the browser, see the results [First loading - in black the OR,in white the OP inside the browser with web console messages] (http://ianonym.peersm.com/img/first_browser_page3.jpg) 
 
 It's already fast while no optimization efforts have been made.
 
@@ -27,7 +27,7 @@ OP
 * self signed certificates generation (OP) --> OK
 * certificates verification (OP) --> OK
 * implement TLS protocol (OP, inside websockets, both client and server side) --> OK, see [Ayms/abstract-tls](https://github.com/Ayms/abstract-tls)
-* retrieve the certificate used for the first TLS connection between the page and the OP (Evil1 attack) --> OK, see [Interception Detector](http://www.ianonym.com/intercept.html)
+* retrieve the certificate used for the first TLS connection between the page and the OP (Evil1 attack) --> OK, see [Interception Detector](http://ianonym.peersm.com/intercept.html)
 * implement Tor protocol and websocket Tor protocol extension (OP, inside websockets) --> OK
 * Webcrypto like features http://www.w3.org/TR/WebCryptoAPI/ (hash, encrypt, decrypt, rsa, aes, dh, etc) --> OK, cryptoJS, jsbn and polycrypt (conversion fonctions) + RELAY_INFO
 
@@ -65,7 +65,7 @@ You can try it Live (soon) :
 * enter url http://www.f4116a30c08bbdfd01813b96c909.com (fake domain)
 * this will load the press public site www.lepoint.fr (a huge public site, therefore a good test site), you can use the web console (or network analyzer) to check that all requests from the browser are toward www.f4116a30c08bbdfd01813b96c909.com domain, the local resources urls (www.f4116a30c08bbdfd01813b96c909.com/logo.png) are not encrypted (but can not be seen when TLS will be implemented), the outside resources urls are encrypted and look like www.f4116a30c08bbdfd01813b96c909.com/ac496a69dbc0abf30b8a2dd7c0105509589a636c391e1e5d04d9e9170644ef2e573b55dcd701acc85
 
-See http://www.ianonym.com Details section for url encoding.
+See http://ianonym.peersm.com Details section for url encoding.
 
 * some requests can still appear to be on the domain www.lepoint.fr, this is because for now urls contained in css files are not filtered.
 
@@ -81,7 +81,7 @@ See [Ayms/node-Tor](https://github.com/Ayms/node-Tor) for RELAY_WS/ASSOCIATE
 ## Related projects :
 
 * [Ayms/node-Tor](https://github.com/Ayms/node-Tor)
-* [Interception Detector](http://www.ianonym.com/intercept.html)
+* [Interception Detector](http://ianonym.peersm.com/intercept.html)
 * [Ayms/abstract-tls](https://github.com/Ayms/abstract-tls)
 * [Ayms/websocket](https://github.com/Ayms/websocket)
 * [Ayms/node-typedarray](https://github.com/Ayms/node-typedarray)
